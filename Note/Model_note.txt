@@ -1,0 +1,76 @@
+0319_1
+BestHyperparameters = {'boosting_type': 'dart', 
+                        'num_leaves': 10, 
+                        'learning_rate': 0.004889109596845264, 
+                        'n_estimators': 16943, 'max_bin': 232, 
+                        'subsample': 0.7823086040575833, 'subsample_freq': 13, 
+                        'colsample_bytree': 0.8106243879716812, 
+                        'min_child_samples': 5}
+0319_2
+BestHyperparameters = {'boosting_type': 'dart', 
+                        'num_leaves': 10, 
+                        'learning_rate': 0.004889109596845264, 
+                        'n_estimators': 16943, 'max_bin': 232, 
+                        'subsample': 0.7823086040575833, 'subsample_freq': 13, 
+                        'colsample_bytree': 0.8106243879716812, 
+                        'min_child_samples': 5}
+* tune to 50 best feature importance
+
+0319_3
+
+*simply blend above 2, expect not much changes
+
+0320_1
+Best_Hyperparameters_2 = {'num_leaves': 30, 
+                       "boosting_type": "gbdt",
+                        'learning_rate': 0.04775679749328264, 
+                       'n_estimators': 14029, 
+                       'max_bin': 111, 
+                       'subsample': 0.9773059458207831, 
+                       'subsample_freq': 1, 
+                       'colsample_bytree': 0.9523986724033833, 
+                       'min_child_samples': 30}
+*0.03
+
+0320_2
+Best_Hyperparameters_2 = {'num_leaves': 30, 
+                       "boosting_type": "gbdt",
+                        'learning_rate': 0.04775679749328264, 
+                       'n_estimators': 14029, 
+                       'max_bin': 111, 
+                       'subsample': 0.9773059458207831, 
+                       'subsample_freq': 1, 
+                       'colsample_bytree': 0.9523986724033833, 
+                       'min_child_samples': 30}
+*0.001
+fix missing values_top 60 features, creating outliers features
+
+---------------------------------------------------------------------------------------------------------------
+0320_3
+rnn_model = Sequential([
+    LSTM(64, return_sequences=True, input_shape=(time_steps, num_features)),  # First LSTM layer
+    Dropout(0.2),
+    LSTM(32, return_sequences=False),  # Second LSTM layer
+    Dropout(0.2),
+    Dense(16, activation='relu'),
+    Dense(1, activation='sigmoid')  # Binary classification output (0 or 1)
+])
+
+rnn blend trimmed results from Best_Hyperparameters_2 1:1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
