@@ -1,0 +1,10 @@
+1. Feature importance numbers 50-100 f1
+2. outliers probably can increase 0.01?
+3. Features contain times series, 1-20 days and basic features, how to incorporate these into the time series model
+4. NN model tuning
+5. Full dataset running without dropping out missing rate > 95% columns
+6. 
+
+
+
+2 relu layers not superior
