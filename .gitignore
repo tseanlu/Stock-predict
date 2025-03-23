@@ -1,0 +1,60 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Virtual environment
+venv/
+.env/
+.venv/
+
+# Jupyter runtime files
+~/.local/share/jupyter/runtime/
+
+# VS Code settings (if applicable)
+.vscode/
+
+# MacOS system files
+.DS_Store
+
+# Python egg files
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+parts/
+var/
+sdist/
+develop-eggs/
+.installed.cfg
+
+# Logs
+*.log
+
+# IPython history
+.history
+
+# Environment files
+.env
+.env.*
+
+# Notebook outputs (optional, depending on workflow)
+**/*.nbconvert.ipynb
+
+# Coverage reports
+htmlcov/
+.tox/
+.coverage
+.cache
+
+Trim_train
+
+# mypy
+.mypy_cache/
+
+# pytest
+.pytest_cache/
