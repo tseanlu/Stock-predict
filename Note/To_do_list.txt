@@ -6,5 +6,25 @@
 6. 
 
 
-
 2 relu layers not superior
+
+
+Priorities:
+1. Neural Network
+	a. Prepare config for GPU running 
+	b. Set up scripts for different model testing using pytorch, including parameters, layers, activation functions. we need table output for documentation
+	c. 
+
+2. False Negatives
+	b. predict multi-y
+
+
+3. Feature engineering
+	a. Missing values - fill na with mean
+	b. Columns reduction
+	c. Time series variables engineering
+	d. derivative statistics from most important features
+
+4. Model assembling
+	a. use model combination for x
+	b. 
